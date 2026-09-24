@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>gofly_fc — repaired PCB preview</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #111827;
+      color: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; }
+    main { width: min(1280px, 100vw); padding: 20px; }
+    header { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; margin-bottom: 14px; }
+    h1 { margin: 0; font-size: clamp(1.1rem, 2vw, 1.5rem); font-weight: 650; }
+    p { margin: 0; color: #9ca3af; font-size: 0.9rem; }
+    model-viewer {
+      width: 100%;
+      height: min(78vh, 760px);
+      min-height: 420px;
+      overflow: hidden;
+      border: 1px solid #374151;
+      border-radius: 12px;
+      background: radial-gradient(circle at 50% 42%, #374151 0, #1f2937 52%, #111827 100%);
+      --poster-color: transparent;
+    }
+    footer { display: flex; justify-content: space-between; gap: 16px; margin-top: 12px; flex-wrap: wrap; }
+    a { color: #93c5fd; }
+    code { color: #d1d5db; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>gofly_fc — repaired PCB</h1>
+      <p>54 mm × 54 mm · PCB-only placement and outline repair</p>
+    </header>
+    <model-viewer
+      src="gofly_fc_preview.glb"
+      alt="Three-dimensional preview of the repaired gofly_fc PCB"
+      camera-controls
+      auto-rotate
+      shadow-intensity="1"
+      exposure="0.9"
+      camera-orbit="45deg 65deg 2.2m"
+      field-of-view="30deg">
+      <p slot="progress-bar">Loading 3D model…</p>
+    </model-viewer>
+    <footer>
+      <p>Drag to orbit · Scroll or pinch to zoom</p>
+      <p>Source: <code>gofly_fc_preview.glb</code> · STEP: <code>gofly_fc_preview.step</code></p>
+    </footer>
+  </main>
+</body>
+</html>

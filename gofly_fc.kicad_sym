@@ -1,0 +1,545 @@
+(kicad_symbol_lib
+  (version 20241209)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (symbol "ICM-42688-P"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Value" "ICM-42688-P"
+      (at 0 -2.54 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Footprint" "Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm"
+      (at 0 -5.08 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Datasheet" "https://invensense.tdk.com/wp-content/uploads/2021/06/DS-000347-ICM-42688-P-v1.5.pdf"
+      (at 0 -7.62 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Description" "6-axis MEMS IMU, 14-pin LGA, SPI interface; pin map selected from DS-000347 Rev. 1.9"
+      (at 0 -10.16 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "ki_keywords" "IMU accelerometer gyroscope SPI ICM-42688-P"
+      (at 0 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (symbol "ICM-42688-P_0_1"
+      (rectangle
+        (start -7.62 -10.16)
+        (end 7.62 10.16)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "ICM-42688-P_1_1"
+      (pin output line
+        (at 10.16 7.62 180)
+        (length 2.54)
+        (name "AP_SDO / AP_AD0"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin no_connect line
+        (at -10.16 0 0)
+        (length 2.54)
+        (name "RESV"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin no_connect line
+        (at -10.16 -2.54 0)
+        (length 2.54)
+        (name "RESV"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 10.16 5.08 180)
+        (length 2.54)
+        (name "INT1 / INT"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "4"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at -2.54 12.7 270)
+        (length 2.54)
+        (name "VDDIO"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "5"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at -2.54 -12.7 90)
+        (length 2.54)
+        (name "GND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "6"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin no_connect line
+        (at -10.16 -5.08 0)
+        (length 2.54)
+        (name "RESV"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "7"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 2.54 12.7 270)
+        (length 2.54)
+        (name "VDD"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "8"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at 10.16 2.54 180)
+        (length 2.54)
+        (name "INT2 / FSYNC / CLKIN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "9"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin no_connect line
+        (at -10.16 -7.62 0)
+        (length 2.54)
+        (name "RESV"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "10"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin no_connect line
+        (at 10.16 0 180)
+        (length 2.54)
+        (name "RESV"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "11"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -10.16 7.62 0)
+        (length 2.54)
+        (name "AP_CS"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "12"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -10.16 5.08 0)
+        (length 2.54)
+        (name "AP_SCL / AP_SCLK"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "13"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -10.16 2.54 0)
+        (length 2.54)
+        (name "AP_SDA / AP_SDIO / AP_SDI"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "14"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+    )
+  )
+  (symbol "MAX7456"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Value" "MAX7456"
+      (at 0 -2.54 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Footprint" "Package_SO:TSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.74x4.75mm"
+      (at 0 -5.08 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/max7456.pdf"
+      (at 0 -7.62 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Description" "5 V analog NTSC/PAL composite OSD generator; obsolete lifecycle; 28-pin TSSOP-EP"
+      (at 0 -10.16 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "ki_keywords" "analog CVBS OSD NTSC PAL MAX7456"
+      (at 0 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (symbol "MAX7456_0_1"
+      (rectangle
+        (start -15.24 -20.32)
+        (end 15.24 20.32)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "MAX7456_1_1"
+      (pin no_connect line
+        (at -17.78 15.24 0)
+        (length 2.54)
+        (name "N.C."
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin no_connect line
+        (at -17.78 12.7 0)
+        (length 2.54)
+        (name "N.C."
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at -5.08 22.86 270)
+        (length 2.54)
+        (name "DVDD"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at -7.62 -22.86 90)
+        (length 2.54)
+        (name "DGND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "4"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -17.78 10.16 0)
+        (length 2.54)
+        (name "CLKIN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "5"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at -17.78 7.62 0)
+        (length 2.54)
+        (name "XFB"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "6"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 17.78 15.24 180)
+        (length 2.54)
+        (name "CLKOUT"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "7"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -17.78 5.08 0)
+        (length 2.54)
+        (name "CS"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "8"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -17.78 2.54 0)
+        (length 2.54)
+        (name "SDIN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "9"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -17.78 0 0)
+        (length 2.54)
+        (name "SCLK"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "10"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 17.78 12.7 180)
+        (length 2.54)
+        (name "SDOUT"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "11"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at -17.78 -2.54 0)
+        (length 2.54)
+        (name "LOS"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "12"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin no_connect line
+        (at 17.78 10.16 180)
+        (length 2.54)
+        (name "N.C."
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "13"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin no_connect line
+        (at 17.78 7.62 180)
+        (length 2.54)
+        (name "N.C."
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "14"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin no_connect line
+        (at 17.78 5.08 180)
+        (length 2.54)
+        (name "N.C."
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "15"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin no_connect line
+        (at 17.78 2.54 180)
+        (length 2.54)
+        (name "N.C."
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "16"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at -17.78 -5.08 0)
+        (length 2.54)
+        (name "VSYNC"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "17"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at -17.78 -7.62 0)
+        (length 2.54)
+        (name "HSYNC"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "18"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -17.78 -10.16 0)
+        (length 2.54)
+        (name "RESET"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "19"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at -2.54 -22.86 90)
+        (length 2.54)
+        (name "AGND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "20"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 0 22.86 270)
+        (length 2.54)
+        (name "AVDD"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "21"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at 17.78 0 180)
+        (length 2.54)
+        (name "VIN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "22"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 2.54 -22.86 90)
+        (length 2.54)
+        (name "PGND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "23"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 5.08 22.86 270)
+        (length 2.54)
+        (name "PVDD"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "24"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at 17.78 -2.54 180)
+        (length 2.54)
+        (name "SAG"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "25"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 17.78 -5.08 180)
+        (length 2.54)
+        (name "VOUT"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "26"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin no_connect line
+        (at -17.78 -12.7 0)
+        (length 2.54)
+        (name "N.C."
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "27"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin no_connect line
+        (at 17.78 -7.62 180)
+        (length 2.54)
+        (name "N.C."
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "28"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at 7.62 -22.86 90)
+        (length 2.54)
+        (name "EP"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "29"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+    )
+  )
+)

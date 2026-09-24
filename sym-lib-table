@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "gofly_fc")(type "KiCad")(uri "C:/Users/admin/gofly/gofly_fc.kicad_sym")(options "")(descr "Project-local FPV flight-controller prototype symbols"))
+)

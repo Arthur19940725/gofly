@@ -1,0 +1,22 @@
+# KiCad local state
+*.kicad_prl
+fp-info-cache
+*-backups/
+_autosave-*
+*.kicad_pcb-bak
+*.kicad_sch-bak
+~*.lck
+
+# Editor and agent local state
+.history/
+.claude/
+.superpowers/
+
+# Firmware build and Python caches
+firmware/build/
+**/__pycache__/
+*.pyc
+
+# OS
+Thumbs.db
+.DS_Store
